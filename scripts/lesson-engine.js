@@ -262,9 +262,6 @@
             <span data-word-count>Word count: ${wc} words</span>
             <span>${checked ? 'Guidance reviewed' : 'Not yet reviewed'}</span>
           </div>
-          <div class="concept-list" aria-label="Key concepts">
-            ${item.concepts.map((concept, conceptIndex) => `<span class="concept-chip ${met[conceptIndex] ? 'met' : ''}">${met[conceptIndex] ? '✓ ' : ''}${escapeHtml(concept.label)}</span>`).join('')}
-          </div>
           <div class="written-actions screen-only">
             <button class="check-button" type="button" data-action="check-written">Check my response</button>
             <button class="model-button" type="button" data-action="model-written">${modelVisible ? 'Hide model response' : 'Compare with model response'}</button>
