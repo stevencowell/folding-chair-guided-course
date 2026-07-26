@@ -1,0 +1,36 @@
+FOLDING CHAIR GUIDED COURSE — FINAL VALIDATION
+======================================================
+
+weeks1-2: 12 guided questions, 4 written responses; nav Home | Weeks 1–2 | Weeks 3–4
+weeks3-4: 12 guided questions, 4 written responses; nav Home | Weeks 1–2 | Weeks 3–4 | Weeks 5–6
+weeks5-6: 12 guided questions, 4 written responses; nav Home | Weeks 3–4 | Weeks 5–6 | Weeks 7–8
+weeks7-8: 12 guided questions, 4 written responses; nav Home | Weeks 5–6 | Weeks 7–8 | Weeks 9–10
+weeks9-10: 12 guided questions, 4 written responses; nav Home | Weeks 7–8 | Weeks 9–10 | Weeks 11–12
+weeks11-12: 12 guided questions, 4 written responses; nav Home | Weeks 9–10 | Weeks 11–12 | Weeks 13–14
+weeks13-14: 12 guided questions, 4 written responses; nav Home | Weeks 11–12 | Weeks 13–14 | Weeks 15–16
+weeks15-16: 12 guided questions, 4 written responses; nav Home | Weeks 13–14 | Weeks 15–16 | Weeks 17–18
+weeks17-18: 12 guided questions, 4 written responses; nav Home | Weeks 15–16 | Weeks 17–18 | Weeks 19–20
+weeks19-20: 12 guided questions, 4 written responses; nav Home | Weeks 17–18 | Weeks 19–20
+
+Totals: 10 paired-week modules, 120 guided questions and 40 written responses.
+
+Automated checks completed:
+- JavaScript syntax
+- Question and feedback structure
+- Progressive hints
+- Duplicate HTML IDs
+- Lesson navigation anchors
+- Local file references
+- Ten active landing-page links
+- No speaker/text-to-speech controls
+- No Google Apps Script endpoints
+
+Browser checks completed:
+- All ten modules rendered with 12 question cards and four written-response cards
+- No console or page errors across the ten modules
+- Incorrect-answer feedback, stronger hints, retry-to-mastery and written guidance were interaction-tested
+- Desktop and mobile layouts were visually inspected
+- Print / Save PDF was tested with long responses; response boxes expand so full written answers are retained
+
+RESULT: PASSED
+All final checks passed.

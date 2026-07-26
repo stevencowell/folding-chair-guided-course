@@ -1,0 +1,1 @@
+Extract the complete folder, then open the top-level index.html landing page. Keep every subfolder in place.

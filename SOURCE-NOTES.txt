@@ -1,0 +1,5 @@
+SOURCE AND ASSET NOTES
+
+The course was built from the user-supplied Folding Chair Project Plans and the earlier Folding Chair guided modules. Selected tool, PPE, material and workshop images were reused from the user-supplied Construction Supplementary Material website. Additional instructional diagrams were constructed in HTML and CSS specifically for this course.
+
+The included SDS example is supplied for learning how to locate chemical-safety information. Current workplace and school procedures, the product label and the current manufacturer SDS take priority in real use.

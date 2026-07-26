@@ -1,0 +1,9 @@
+# Local browser and editor files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Local working folders
+work/
+tmp/

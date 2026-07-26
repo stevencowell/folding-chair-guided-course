@@ -1,0 +1,288 @@
+FOLDING CHAIR GUIDED COURSE — TEACHER NOTES
+
+COURSE DESIGN
+The ten modules use mastery-oriented questioning. An incorrect multiple-choice choice triggers feedback aimed at the specific misconception, then a stronger clue after repeated attempts. Written models stay locked until a genuine attempt has been made. The webpage does not transmit or verify marks; a saved PDF is student evidence, not an automatically authenticated test record.
+
+SUGGESTED CLASSROOM ROUTINE
+1. Teach or read the theory and inspect the linked diagrams during the first lesson of the paired-week block.
+2. Use selected guided questions for discussion, then have students complete the set individually.
+3. Require written responses to be the student’s own first attempt before model comparison.
+4. Ask students to improve weak wording after feedback and self-assess honestly.
+5. At the end of the block, students enter their name and class and use Print / Save PDF for Google Classroom.
+
+==============================================================================
+WEEKS 1–2 — BRIEF, SAFETY, DESIGN AND MARK-OUT
+
+MULTIPLE-CHOICE ANSWER KEY
+1. The written dimensions and notes on the drawing
+2. 384 mm
+3. It changes the geometry, folding path and possibly the stability of the chair
+4. Something with the potential to cause harm
+5. Eliminate the hazard
+6. To separate the faces, spread pressure and reduce friction and wear
+7. To identify pinch points, collisions, rubbing and clearance problems
+8. Compare appearance, strength, function, time and manufacturability before deciding
+9. A fixed reference face, edge or point from which measurements are taken
+10. They create consistent reference surfaces for accurate measurement and assembly
+11. Place your eye directly above the graduation being read
+12. Arrange the parts as mirror images and countersink the intended matching outside faces
+
+WRITTEN-RESPONSE FOCUS
+1. Why does the drawing say “DO NOT SCALE DRAWING”? — minimum 45 words
+   Focus: drawing may be resized, written dimensions, manufacturing consequence.
+2. Hazard, risk and controls for drilling a pivot hole — minimum 70 words
+   Focus: hazard identified, risk described, work secured, setup, supervision or PPE.
+3. Select and justify a design variation — minimum 85 words
+   Focus: function or brief, strength, appearance, manufacture or time, justified compromise.
+4. Explain a reliable mark-out routine for a mirrored pair — minimum 95 words
+   Focus: face side and face edge, single datum, fine accurate marks, pairing and orientation, quality check.
+
+==============================================================================
+WEEKS 3–4 — TIMBER PREPARATION AND JOINERY FOUNDATIONS
+
+MULTIPLE-CHOICE ANSWER KEY
+1. To organise component names, quantities, sizes and material before cutting begins
+2. To allow saw marks, damaged ends and distortion to be removed while reaching the finished size
+3. Cup
+4. Dressed All Round; inspect it for movement, defects, size and squareness
+5. Because the remaining surfaces need reliable references
+6. Establish one straight edge square to the face side
+7. It makes the upper face parallel to the surface supported on the bed, so an unstable underside can reproduce the distortion
+8. To reduce tear-out and produce a cleaner surface
+9. A rectangular cavity receiving a matching tongue
+10. To prevent the work lifting or rotating and to maintain accuracy and operator safety
+11. Identify the high spots and remove very small amounts from the tenon, checking the fit often
+12. The pivot must allow controlled rotation
+
+WRITTEN-RESPONSE FOCUS
+1. Turn a drawing into a practical cutting list — minimum 80 words
+   Focus: component and quantity, material and dimensions, allowance, pairing or handedness.
+2. Explain the FEWTEL timber-preparation sequence — minimum 100 words
+   Focus: face and edge references, width and thickness, end and length, quality checks, reason for order.
+3. Safe and accurate use of a hollow-chisel mortiser — minimum 95 words
+   Focus: machine and PPE checks, work holding, controlled plunges, response to binding.
+4. Select the right joint for the required behaviour — minimum 100 words
+   Focus: mortise and tenon, trench, pivot hardware, joint selection.
+
+==============================================================================
+WEEKS 5–6 — BANDSAW SHAPING AND JOINERY REFINEMENT
+
+MULTIPLE-CHOICE ANSWER KEY
+1. To support the blade near the cut while limiting unnecessary exposed blade
+2. Stop and use an approved blade, jig or alternative process
+3. To divide waste so it can fall away and reduce blade binding
+4. So the component can be refined accurately to final size
+5. The timber lifts and the blade begins to stall
+6. They can reduce feel and introduce an entanglement hazard
+7. Ahead along the marked path while maintaining awareness of the blade
+8. Identify the high spot, remove a very small amount and test again
+9. Location, alignment and a neat closed joint
+10. A checkpoint that requires evidence before work continues
+11. To confirm matching length, curve and transition before later drilling
+12. Several small inaccuracies combining into a significant final fault
+
+WRITTEN-RESPONSE FOCUS
+1. Plan a safe curved bandsaw cut — minimum 105 words
+   Focus: accurate radius and waste, guard and support, controlled feed and hands, relief cuts or method choice, refine and compare.
+2. Respond to a change in bandsaw conditions — minimum 90 words
+   Focus: stop safely, teacher assistance, identify likely causes, protect the component.
+3. Diagnose and refine a tight tenon — minimum 100 words
+   Focus: inspect alignment and shoulders, locate high spots, controlled removal, repeat test fit, avoid force or random sanding.
+4. Explain how quality gates protect the folding mechanism — minimum 110 words
+   Focus: defined checkpoints, marking check, shape and pair check, drilling readiness, cumulative mechanism effect.
+
+==============================================================================
+WEEKS 7–8 — DRILLING, COUNTERSINKING AND DRY ASSEMBLY
+
+MULTIPLE-CHOICE ANSWER KEY
+1. To create a small clearance for assembly and rotation
+2. A written dimension measured from an established datum
+3. A catching bit can spin, lift or throw the timber
+4. To support the exit fibres and reduce breakout
+5. Arranged as a mirrored pair with the intended outside faces clearly marked
+6. Cut in small increments and test with the actual approved bolt head
+7. To separate bearing faces, spread pressure and reduce friction and wear
+8. To resist loosening during repeated movement
+9. Identify where resistance begins and diagnose alignment, washers and hardware tension
+10. An SOP covers a machine or standard process; a WMS plans the sequence, hazards and controls for a particular job
+11. Sequence, hazards, controls, quality checks and response if a fault appears
+12. To reveal alignment, clearance and movement faults while parts can still be corrected
+
+WRITTEN-RESPONSE FOCUS
+1. Describe a safe and accurate pivot-hole drilling process — minimum 115 words
+   Focus: datum and dimensions, left/right orientation, secure setup, perpendicular controlled drilling, inspection and comparison.
+2. Explain the pivot hardware stack — minimum 95 words
+   Focus: bolt as axle, washers between members, washer under nut, locknut purpose, tension balance.
+3. Diagnose a dry-assembly fault — minimum 110 words
+   Focus: locate when and where, check washers and tension, check alignment and twist, least invasive correction, avoid random removal.
+4. Build a WMS for the pivot task — minimum 125 words
+   Focus: sequence, drawing and SOP, hazards and controls, hold points, quality evidence.
+
+==============================================================================
+WEEKS 9–10 — DESIGN FEATURES AND TECHNICAL DRAWING
+
+MULTIPLE-CHOICE ANSWER KEY
+1. I chose it because it improves carrying, preserves strength, clears the mechanism and can be made accurately
+2. The area carries stress and needs sufficient timber around the hole
+3. Mechanical clearance and function
+4. To show that some criteria, such as safety and function, have greater importance
+5. Above the front view
+6. Side view
+7. The axis or exact centre of the circular feature
+8. A circular hole with a diameter of 6.5 mm
+9. To reduce cumulative error
+10. A concentric constraint
+11. CAD can draw a wrong dimension very accurately
+12. To identify which version contains the current approved information
+
+WRITTEN-RESPONSE FOCUS
+1. Evaluate two design features — minimum 120 words
+   Focus: clear selection, function and user, strength and pivot, appearance and manufacture, clearance and final judgement.
+2. Explain an orthogonal view set for the folding chair — minimum 105 words
+   Focus: front view information, top view information, side view mechanism, third-angle placement, cross-view alignment.
+3. Critique a faulty technical drawing — minimum 120 words
+   Focus: units and authority, datum problem, duplicate contradiction, countersink note, independent check.
+4. Describe a reliable CAD workflow — minimum 125 words
+   Focus: units and layers, datum-based geometry, constraints, dimensions and notes, revision and verification.
+
+==============================================================================
+WEEKS 11–12 — ASSEMBLY, ADHESIVES AND PROJECT PLANNING
+
+MULTIPLE-CHOICE ANSWER KEY
+1. To confirm fit, sequence, clamp access and measurements while correction is still easy
+2. The period after application in which the joint should be assembled and closed
+3. A strong bond still depends on sound geometry, close contact and suitable grain surfaces
+4. Rack the frame, crush fibres, bow components or squeeze out too much adhesive
+5. The frame is racked and should be adjusted before the adhesive sets
+6. To spread pressure and prevent jaw marks or bruising
+7. $3.60
+8. Real production may require extra material for defects, saw kerfs, dressing and selection
+9. A task that must be completed before another task can begin
+10. Confirm the chair folds correctly and all glue residue is removed
+11. The chain of dependent tasks that controls the earliest completion date
+12. Prioritise structural, functional and assessment work; defer low-value decoration and update the plan
+
+WRITTEN-RESPONSE FOCUS
+1. Plan a controlled seat-frame glue-up — minimum 125 words
+   Focus: dry fit and orientation, adhesive preparation and open time, clamp placement and pads, squareness checks, clean-up and cure.
+2. Diagnose a racked frame during glue-up — minimum 95 words
+   Focus: evidence of racking, pressure direction, bow cause, controlled adjustment, time and joint closure.
+3. Calculate and explain a component cost — minimum 105 words
+   Focus: net length calculation, allowance calculation, timber cost, other costs, final total and units.
+4. Build a realistic two-week production plan — minimum 125 words
+   Focus: logical sequence and dependencies, hold points, time and cure, buffer, parallel task and update.
+
+==============================================================================
+WEEKS 13–14 — SURFACE PREPARATION AND FINISHING
+
+MULTIPLE-CHOICE ANSWER KEY
+1. It can block finish absorption and appear as a pale patch
+2. A coarser abrasive with larger cutting particles
+3. Otherwise deep scratches may remain visible after finishing
+4. It keeps pressure even and helps the surface remain flat
+5. To see colour, grain response, absorption and compatibility before coating the chair
+6. Drying is an early handling stage; curing is the longer development of hardness and resistance
+7. Lightly removing raised dust particles or fibres between coats as directed
+8. A coat applied too heavily
+9. Residual glue blocked or changed finish absorption
+10. Planned systems that prevent defects and ensure requirements are built into the process
+11. They reduce variation and make repeated operations more consistent
+12. How do you check components before they move to assembly?
+
+WRITTEN-RESPONSE FOCUS
+1. Plan the chair’s surface-preparation sequence — minimum 125 words
+   Focus: initial inspection, shape before surface, controlled grit sequence, grain and edge control, clean and function check.
+2. Select and justify a finish system — minimum 120 words
+   Focus: clear selection and use, appearance and protection, clearance and movement, safety and cure, maintenance and repair.
+3. Diagnose a poor finish result — minimum 120 words
+   Focus: dust nib cause, sag cause, pale patch cause, do not add more immediately, controlled correction.
+4. Compare school and industry quality practice — minimum 130 words
+   Focus: standard work, jigs or templates, traceability, staged inspection, maintenance and reporting.
+
+==============================================================================
+WEEKS 15–16 — CHEMICAL SAFETY AND SUSTAINABILITY
+
+MULTIPLE-CHOICE ANSWER KEY
+1. The exact label, intended use, hazards, precautions and current SDS
+2. Indicates the relative severity of the classified hazards on the label
+3. Section 4
+4. Section 8 – Exposure controls and personal protection
+5. Effective local exhaust ventilation in the designated area
+6. It depends on correct selection, fit and use and does not remove the hazard
+7. Alert the teacher, keep others away and follow the school procedure and SDS
+8. Chemical resistance depends on the glove material and product information
+9. When the finish has cured to the stage required by the product system
+10. The timber is renewable, and the design also reduces waste, supports repair and aims for a long service life
+11. Worn hardware can be inspected and replaced without discarding the whole chair
+12. Avoid creating unnecessary waste in the first place
+
+WRITTEN-RESPONSE FOCUS
+1. Use an SDS to prepare for a finishing task — minimum 125 words
+   Focus: hazard section, exposure and PPE section, first aid section, spill and storage sections, exact current product.
+2. Select controls for a solvent-based coating task — minimum 125 words
+   Focus: substitution, isolation or engineering, administrative, ppe matched to SDS, why PPE alone is weaker.
+3. Compare two finish options using sustainability criteria — minimum 125 words
+   Focus: clear recommendation, hazard and controls, durability and maintenance, use and performance, life-cycle trade-off.
+4. Propose a life-cycle improvement plan — minimum 135 words
+   Focus: responsible sourcing, material and process efficiency, durability and maintenance, repairability, end-of-life separation.
+
+==============================================================================
+WEEKS 17–18 — PORTFOLIO, EVALUATION AND REVISION
+
+MULTIPLE-CHOICE ANSWER KEY
+1. One labelled photo showing the component, template comparison, quality result and date
+2. The stage, process or decision, evidence and outcome
+3. The chair met the folding criterion because it completed ten cycles without collision, although slight side play remains
+4. They are useful when they show development, correction or decision-making
+5. Use a drilling jig and compare paired pivot centres on an alignment rod before countersinking
+6. Trying to recall information before checking the answer
+7. Mixing related topics or problem types during practice
+8. Show how washers spread pressure and reduce friction between moving timber members
+9. Support a decision with relevant reasons and evidence
+10. It records the misconception, corrected principle and an example for later retrieval
+11. Connect datums, prepared reference surfaces, paired shaping, pivot drilling and dry assembly with cause and effect
+12. Return to the command word and confirm every required part is answered
+
+WRITTEN-RESPONSE FOCUS
+1. Select a concise portfolio evidence set — minimum 135 words
+   Focus: brief or criteria evidence, design and drawing evidence, production and quality evidence, cost or sustainability evidence, evaluation evidence.
+2. Write a strong production caption — minimum 90 words
+   Focus: stage, specified hardware, fault and evidence, correction, outcome.
+3. Evaluate one criterion with evidence — minimum 125 words
+   Focus: criterion and tests, evidence, judgement, limitation and cause, specific improvement.
+4. Answer an integrated assessment question — minimum 140 words
+   Focus: measuring and datums, FEWTEL references, paired component control, pivot accuracy, dry assembly diagnosis.
+
+==============================================================================
+WEEKS 19–20 — FINAL QUALITY, SUBMISSION AND REFLECTION
+
+MULTIPLE-CHOICE ANSWER KEY
+1. Safety and function before cosmetic extras
+2. It reduces the chance that important areas are missed
+3. The exact contact point, washer stack, hardware seating and local clearance
+4. Restore the requirement while changing or removing the least sound material
+5. Uneven feet or a racked frame
+6. Dismantling a machine guard to fix an electrical fault
+7. Documentation of the product as it was actually completed, including approved differences
+8. Authentic, accurate evidence with sources and assistance acknowledged where required
+9. Next time I will compare paired pivot centres on an alignment rod before countersinking and record the check
+10. The coating may not be fully cured and can mark, stick or build up at contact surfaces
+11. Remove it from use until the cause is assessed and repaired appropriately
+12. Tools returned, waste separated, chemicals secured, faults reported and access paths clear
+
+WRITTEN-RESPONSE FOCUS
+1. Write a final quality-assurance report — minimum 145 words
+   Focus: structure and joints, hardware and movement, stability and finish, documentation, handover and decision.
+2. Diagnose two final faults — minimum 135 words
+   Focus: separate symptoms, binding checks, rocking checks, least invasive actions, retest and document.
+3. Prepare an authentic final submission — minimum 130 words
+   Focus: product presentation and cure, as-built and revision, authentic evidence and sources, photos and calculations, honest fault evaluation.
+4. Write a final reflective practice response — minimum 145 words
+   Focus: successful habit, problem and cause, specific future action, verification, transferable skill.
+
+==============================================================================
+TECHNICAL AND RECORD-KEEPING NOTES
+- Answers are stored only in the browser using local storage. They can be lost when browser data are cleared, another device is used or a different extracted folder is opened.
+- The PDF workflow is deliberately transparent: it creates a visible record students can submit, but it is not a secure examination system.
+- Reset clears that module’s student details and responses from the current browser only.
+- All pages work locally after extraction; no web server, Apps Script or external account is required.
