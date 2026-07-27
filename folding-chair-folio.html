@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-first student folio for the Year 10 Timber Folding Chair project.">
+  <title>Folding Chair | Student Folio</title>
+  <link rel="stylesheet" href="styles/course.css">
+  <link rel="stylesheet" href="styles/folding-chair-folio.css">
+</head>
+<body class="chair-folio-page">
+  <a class="skip-link" href="#main-content">Skip to folio</a>
+  <header class="chair-folio-hero">
+    <div>
+      <p class="eyebrow">Industrial Technology – Timber</p>
+      <h1>Folding Chair Project Folio</h1>
+      <p>Build your evidence as you build your chair. Your work saves in this browser; download a ZIP backup before changing devices.</p>
+      <a class="button-link secondary" href="index.html">← Back to course home</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="chair-folio-shell">
+    <section class="folio-intro card">
+      <div>
+        <p class="section-kicker">Evidence first</p>
+        <h2>Show the decisions, process and result</h2>
+        <p>A strong folio is not perfect-sounding waffle. It shows what you planned, the evidence you collected, what went wrong, what you changed and what the finished chair proves.</p>
+      </div>
+      <ol class="folio-routine">
+        <li><strong>1. Collect</strong><span>Take a useful photo, sketch or note.</span></li>
+        <li><strong>2. Explain</strong><span>Say what it proves and why it matters.</span></li>
+        <li><strong>3. Back up</strong><span>Download your ZIP before changing devices.</span></li>
+      </ol>
+    </section>
+
+    <figure class="folio-infographic">
+      <img src="assets/folio/folding-chair-folio-guide.png" alt="Infographic showing students collecting evidence, explaining decisions and backing up their Folding Chair folio.">
+      <figcaption>Use this routine every lesson: collect useful evidence, explain what it proves, then back up your work.</figcaption>
+    </figure>
+
+    <section class="folio-controls card" aria-labelledby="student-details-heading">
+      <div class="folio-control-copy"><p class="section-kicker">Your session</p><h2 id="student-details-heading">Student details and saving</h2><p id="folioStatus" role="status">Ready. Autosave is on.</p></div>
+      <div class="folio-details">
+        <label>First name<input id="studentFirst" type="text" autocomplete="given-name"></label>
+        <label>Last name<input id="studentLast" type="text" autocomplete="family-name"></label>
+        <label>Class<input id="studentClass" type="text"></label>
+        <label>Date<input id="sessionDate" type="date"></label>
+      </div>
+      <div class="folio-actions">
+        <button class="button-link" type="button" id="downloadZip">Download ZIP backup</button>
+        <button class="button-link secondary" type="button" id="restoreSession">Restore ZIP or JSON</button>
+        <button class="button-link secondary" type="button" id="downloadJson">Download JSON</button>
+        <button class="button-link secondary" type="button" id="printFolio">Print / Save PDF</button>
+        <button class="button-link secondary" type="button" id="clearFolio">Clear workbook</button>
+        <input id="restoreInput" type="file" accept=".zip,.json,application/zip,application/json" hidden>
+      </div>
+      <div class="folio-progress" aria-label="Folio progress"><div><strong id="progressCount">0 of 12 evidence cards complete</strong><span id="progressHint">Add a response and evidence note to complete a card.</span></div><div class="progress-track"><span id="progressBar"></span></div></div>
+    </section>
+
+    <section class="folio-submission card"><div><p class="section-kicker">When your teacher asks</p><h2>Submit your evidence</h2><p>Download your ZIP backup. It includes your answers and attached photos. Upload that one ZIP file to the Folding Chair Project Folio submission in Google Classroom.</p></div><div class="submission-badge">ZIP<br><span>answers + photos</span></div></section>
+    <section id="folioCards" class="folio-cards" aria-label="Folding Chair project folio evidence cards"></section>
+  </main>
+  <footer><p>Folding Chair Guided Course | Year 10 Timber</p></footer>
+  <script src="scripts/folding-chair-folio.js"></script>
+</body>
+</html>
