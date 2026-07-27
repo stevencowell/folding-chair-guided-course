@@ -1,0 +1,29 @@
+.folio-card-graphic {
+  margin: 1.1rem 0 1.25rem;
+  overflow: hidden;
+  border: 1px solid #cfdceb;
+  border-radius: 14px;
+  background: #fffdf7;
+  box-shadow: 0 8px 18px rgba(12, 59, 99, 0.08);
+}
+
+.folio-card-graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #edf4fb;
+}
+
+.folio-card-graphic figcaption {
+  padding: 0.65rem 0.85rem;
+  color: #51647a;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+@media print {
+  .folio-card-graphic {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+}
