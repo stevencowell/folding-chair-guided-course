@@ -629,6 +629,12 @@ footer p { margin: 3px; }
 .resource-buttons a { display: inline-flex; align-items: center; min-height: 42px; border-radius: 9px; padding: 8px 13px; text-decoration: none; font-weight: 900; background: var(--brand-light); color: var(--brand-dark); border: 1px solid #b9d3e9; }
 .resource-buttons a:hover { background: var(--brand); color: #fff; }
 
+.plans-narration { margin-top: 18px; padding: 15px; border: 1px solid var(--line); border-radius: 12px; background: #f8fbfe; }
+.plans-narration h3 { margin: 0 0 6px; color: var(--brand-dark); }
+.plans-narration p { margin: 0 0 10px; }
+.plans-narration audio { width: min(100%, 560px); display: block; }
+.plans-narration a { color: var(--brand-dark); font-weight: 900; }
+
 @media (max-width: 900px) {
   .orthographic-grid, .math-example, .quality-grid, .evidence-map { grid-template-columns: 1fr; }
   .timeline-grid { grid-template-columns: repeat(2, 1fr); }
