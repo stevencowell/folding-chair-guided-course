@@ -257,6 +257,22 @@ input[type="text"]:focus, textarea:focus { outline: 3px solid rgba(11,95,173,.18
 .theory-table th { background: #edf3f9; color: var(--brand-dark); }
 .theory-table tbody tr:nth-child(even) { background: #fbfcfe; }
 
+.textbook-section { display: flow-root; }
+.lesson-visual {
+  float: right;
+  width: min(42%, 430px);
+  margin: .25rem 0 1rem 1.4rem;
+  padding: .7rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f8fbfe;
+  box-shadow: 0 10px 24px rgba(17, 46, 74, .09);
+}
+.lesson-visual--left { float: left; margin: .25rem 1.4rem 1rem 0; }
+.lesson-visual img { display: block; width: 100%; height: auto; border-radius: 9px; background: #fff; }
+.lesson-visual figcaption { margin-top: .65rem; color: var(--muted); font-size: .82rem; line-height: 1.45; }
+.lesson-visual ~ .sds-grid { clear: both; }
+
 .example-strip { display: grid; grid-template-columns: 1fr auto 1.35fr auto 1.4fr; gap: 12px; align-items: center; margin: 20px 0 26px; }
 .example-strip > div:not(.arrow) { border: 1px solid var(--line); border-radius: 11px; padding: 14px; min-height: 93px; }
 .example-strip span { display: block; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: var(--brand); font-weight: 900; margin-bottom: 4px; }
@@ -407,6 +423,7 @@ footer p { margin: 3px; }
   .image-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
+  .lesson-visual, .lesson-visual--left { float: none; width: 100%; margin: 1.15rem 0; }
   .hero-inner { grid-template-columns: 1fr 190px; min-height: 285px; }
   .hero-chair { max-height: 230px; }
   .student-strip { grid-template-columns: 1fr; }
