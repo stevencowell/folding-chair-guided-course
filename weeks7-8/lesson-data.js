@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks7-8-guided-v1",
   "resetLabel": "Weeks 7–8"
 };
+window.THEORY_REFERENCES = {
+  mc: ["hardware", "hole-location", "drilling", "drilling", "countersinking", "countersinking", "hardware", "hardware", "dry-assembly", "wms", "wms", "dry-assembly"],
+  written: ["drilling", "hardware", "dry-assembly", "wms"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Why does the chair drawing specify a 6.5 mm hole for an M6 pivot bolt?",

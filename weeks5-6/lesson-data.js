@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks5-6-guided-v1",
   "resetLabel": "Weeks 5–6"
 };
+window.THEORY_REFERENCES = {
+  mc: ["bandsaw", "curves", "curves", "curves", "sop", "sop", "curves", "refinement", "refinement", "quality-gates", "curves", "quality-gates"],
+  written: ["curves", "sop", "refinement", "quality-gates"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Why should the upper bandsaw guard be set just above the workpiece?",

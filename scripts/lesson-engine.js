@@ -4,6 +4,7 @@
   const config = window.LESSON_CONFIG || {};
   const mcQuestions = window.MC_QUESTIONS || [];
   const writtenQuestions = window.WRITTEN_QUESTIONS || [];
+  const theoryReferences = window.THEORY_REFERENCES || {};
   const STORAGE_KEY = config.storageKey || 'folding-chair-guided-lesson';
 
   const defaultState = {
@@ -41,7 +42,7 @@
   let migratedLegacyGuidance = false;
   Object.values(state.written).forEach((saved) => {
     if (typeof saved.guidance === 'string' && /genuine attempt first|at least 55 words|check your response twice/i.test(saved.guidance)) {
-      saved.guidance = '<strong>Start with a short attempt.</strong> Write about 15 words, or use Check my response once, then compare your ideas with the model response.';
+      saved.guidance = '<strong>Start with a short attempt.</strong> Write about 15 words, or use Check my response once, then compare your ideas with the appropriate response example.';
       migratedLegacyGuidance = true;
     }
   });
@@ -76,6 +77,16 @@
 
   function wordCount(text) {
     return String(text || '').trim().split(/\s+/).filter(Boolean).length;
+  }
+
+  function getTheoryReference(kind, index) {
+    const reference = (theoryReferences[kind] || [])[index];
+    if (!reference) return null;
+    const href = typeof reference === 'string' ? `#${reference}` : reference.href;
+    const localTarget = href && href.startsWith('#') ? document.getElementById(href.slice(1)) : null;
+    const heading = localTarget ? localTarget.querySelector('h2, h3') : null;
+    const title = typeof reference === 'string' ? (heading ? heading.textContent.trim() : reference) : reference.title;
+    return href && title ? { href, title } : null;
   }
 
   function pdfText(value) {
@@ -204,7 +215,9 @@
       const selected = Number.isInteger(saved.selected) ? saved.selected : null;
       const mastered = Boolean(saved.mastered);
       const attempts = saved.attempts || 0;
-      const hintVisible = Boolean(saved.hintVisible);
+      const theoryVisible = Boolean(saved.theoryVisible || saved.hintVisible);
+      const clueVisible = Boolean(saved.clueVisible);
+      const theory = getTheoryReference('mc', index);
       const feedbackClass = saved.feedbackType || '';
       const feedback = saved.feedback || '';
 
@@ -226,11 +239,19 @@
           <div class="options">${options}</div>
           <div class="question-actions screen-only">
             <button class="check-button" type="button" data-action="check-mc">${mastered ? 'Check again' : 'Check answer'}</button>
-            <button class="hint-button" type="button" data-action="hint-mc">${hintVisible ? 'Hide hint' : 'Need a hint?'}</button>
+            ${theory
+              ? `<button class="hint-button" type="button" data-action="theory-mc" aria-expanded="${theoryVisible}" aria-controls="theory-mc-${index}">${theoryVisible ? 'Hide theory direction' : 'Need a hint?'}</button>`
+              : `<button class="hint-button" type="button" data-action="hint-mc" aria-expanded="${Boolean(saved.hintVisible)}" aria-controls="clue-mc-${index}">${saved.hintVisible ? 'Hide hint' : 'Need a hint?'}</button>`}
             <span class="mastery-badge">Mastered</span>
             <span class="attempts">Attempts: ${attempts}</span>
           </div>
-          <div class="hint-panel ${hintVisible ? 'show' : ''}"><strong>Hint:</strong> ${escapeHtml(attempts >= 2 ? item.strongHint : item.hint)}</div>
+          ${theory ? `<div id="theory-mc-${index}" class="theory-hint-panel ${theoryVisible ? 'show' : ''}">
+            <strong>Start with the theory:</strong>
+            <a class="theory-revisit-link" href="${escapeHtml(theory.href)}" data-action="revisit-theory" data-theory-target="${escapeHtml(theory.href.slice(1))}">Revisit ${escapeHtml(theory.title)}</a>.
+            <p>Read that section, then return here and use its evidence to rule out the options that do not fit.</p>
+            <button class="secondary-hint-button screen-only" type="button" data-action="clue-mc" aria-expanded="${clueVisible}" aria-controls="clue-mc-${index}">${clueVisible ? 'Hide another clue' : 'Show another clue'}</button>
+          </div>` : ''}
+          <div id="clue-mc-${index}" class="hint-panel ${theory ? (theoryVisible && clueVisible ? 'show' : '') : (saved.hintVisible ? 'show' : '')}"><strong>${theory ? 'Another clue:' : 'Hint:'}</strong> ${escapeHtml(attempts >= 2 ? item.strongHint : item.hint)}</div>
           <div class="feedback ${feedbackClass} ${feedback ? 'show' : ''}" role="status" aria-live="polite">${feedback}</div>
         </article>`;
     }).join('');
@@ -247,6 +268,7 @@
       const selfScore = Number.isInteger(saved.selfScore) ? saved.selfScore : null;
       const wc = wordCount(response);
       const met = conceptMatches(response, item.concepts);
+      const theory = getTheoryReference('written', index);
 
       return `
         <article class="written-card ${checked ? 'reviewed' : ''}" data-written-index="${index}">
@@ -255,19 +277,20 @@
           <div class="scaffold">
             <strong>Sentence starters</strong>
             <ul>${item.scaffold.map(line => `<li>${escapeHtml(line)}</li>`).join('')}</ul>
+            ${theory ? `<p class="written-theory-link"><strong>Use the source:</strong> <a href="${escapeHtml(theory.href)}" data-action="revisit-theory" data-theory-target="${escapeHtml(theory.href.slice(1))}">Revisit ${escapeHtml(theory.title)}</a>.</p>` : ''}
           </div>
           <label class="visually-hidden" for="written-${index}">Response to ${escapeHtml(item.title)}</label>
-          <textarea id="written-${index}" data-action="written-input" placeholder="Write your response here before viewing the model answer…">${escapeHtml(response)}</textarea>
+          <textarea id="written-${index}" data-action="written-input" placeholder="Write your response here before viewing the appropriate response example…">${escapeHtml(response)}</textarea>
           <div class="response-meta">
             <span data-word-count>Word count: ${wc} words</span>
             <span>${checked ? 'Guidance reviewed' : 'Not yet reviewed'}</span>
           </div>
           <div class="written-actions screen-only">
             <button class="check-button" type="button" data-action="check-written">Check my response</button>
-            <button class="model-button" type="button" data-action="model-written">${modelVisible ? 'Hide model response' : 'Compare with model response'}</button>
+            <button class="model-button" type="button" data-action="model-written" aria-expanded="${modelVisible}" aria-controls="model-written-${index}">${modelVisible ? 'Hide appropriate response example' : 'Compare with appropriate response example'}</button>
           </div>
           <div class="response-guidance ${saved.guidance ? 'show' : ''} ${saved.ready ? 'ready' : ''}" role="status" aria-live="polite">${saved.guidance || ''}</div>
-          <div class="model-panel ${modelVisible ? 'show' : ''}"><strong>Model response:</strong> ${escapeHtml(item.model)}</div>
+          <div id="model-written-${index}" class="model-panel ${modelVisible ? 'show' : ''}"><strong>Appropriate response example:</strong> ${escapeHtml(item.model)}</div>
           <div class="self-score ${modelVisible ? 'show' : ''}">
             <strong>Self-assess after comparing:</strong>
             <div class="score-buttons screen-only">
@@ -298,8 +321,41 @@
     const saved = state.mc[index] || { attempts: 0 };
     const action = event.target.dataset.action;
 
-    if (action === 'hint-mc') {
+    if (action === 'revisit-theory') {
+      const target = document.getElementById(event.target.dataset.theoryTarget);
+      if (target) {
+        event.preventDefault();
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.history.replaceState(null, '', `#${target.id}`);
+      }
+      return;
+    }
+    const theory = getTheoryReference('mc', index);
+
+    if (action === 'hint-mc' && !theory) {
       saved.hintVisible = !saved.hintVisible;
+      state.mc[index] = saved;
+      saveState();
+      renderMcQuestions();
+      return;
+    }
+
+    if (action === 'theory-mc') {
+      saved.theoryVisible = !(saved.theoryVisible || saved.hintVisible);
+      saved.hintVisible = false;
+      if (!saved.theoryVisible) saved.clueVisible = false;
+      state.mc[index] = saved;
+      saveState();
+      renderMcQuestions();
+      return;
+    }
+
+    if (action === 'clue-mc' && (saved.theoryVisible || saved.hintVisible)) {
+      saved.theoryVisible = true;
+      saved.hintVisible = false;
+      saved.clueVisible = !saved.clueVisible;
       state.mc[index] = saved;
       saveState();
       renderMcQuestions();
@@ -328,11 +384,14 @@
       } else {
         saved.mastered = false;
         saved.lastWrong = selected;
-        saved.hintVisible = true;
+        saved.theoryVisible = Boolean(theory);
+        saved.hintVisible = !theory;
         saved.feedbackType = 'not-yet';
-        const nextStep = saved.attempts >= 2
-          ? 'Use the stronger clue, rule out the options that do not match the theory, then try again.'
-          : 'Read the hint and try again.';
+        const nextStep = theory
+          ? (saved.attempts >= 2
+              ? 'Revisit the linked theory section; another clue is available beneath it if you still need help.'
+              : 'Revisit the linked theory section, then try again.')
+          : (saved.attempts >= 2 ? 'Use the stronger clue, rule out the options that do not fit, then try again.' : 'Read the hint and try again.');
         saved.feedback = `<strong>Not yet.</strong> ${escapeHtml(item.feedback[selected])} ${escapeHtml(nextStep)}`;
       }
       state.mc[index] = saved;
@@ -384,6 +443,18 @@
     const saved = state.written[index] || {};
     const action = event.target.dataset.action;
 
+    if (action === 'revisit-theory') {
+      const target = document.getElementById(event.target.dataset.theoryTarget);
+      if (target) {
+        event.preventDefault();
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.history.replaceState(null, '', `#${target.id}`);
+      }
+      return;
+    }
+
     if (action === 'check-written') {
       const response = saved.response || '';
       const wc = wordCount(response);
@@ -395,14 +466,14 @@
       if (wc < 15) {
         const remaining = 15 - wc;
         saved.ready = false;
-        saved.guidance = `<strong>Good start.</strong> Add about ${remaining} more word${remaining === 1 ? '' : 's'} for a short attempt. You can then compare your ideas with the model response.`;
+        saved.guidance = `<strong>Good start.</strong> Add about ${remaining} more word${remaining === 1 ? '' : 's'} for a short attempt. You can then compare your ideas with the appropriate response example.`;
       } else if (missingIndexes.length) {
         saved.ready = false;
         const prompts = missingIndexes.map(i => `<li>${escapeHtml(item.prompts[i])}</li>`).join('');
         saved.guidance = `<strong>You have part of the answer.</strong> Strengthen it by adding:<ul>${prompts}</ul>`;
       } else {
         saved.ready = true;
-        saved.guidance = '<strong>Strong response.</strong> You have included the main concepts. Compare it with the model, improve any unclear wording, then self-assess honestly.';
+        saved.guidance = '<strong>Strong response.</strong> You have included the main concepts. Compare it with the appropriate response example, improve any unclear wording, then self-assess honestly.';
       }
       state.written[index] = saved;
       saveState();
@@ -416,7 +487,7 @@
       if (!saved.modelVisible && !canReveal) {
         saved.checked = true;
         saved.ready = false;
-        saved.guidance = '<strong>Start with a short attempt.</strong> Write about 15 words, or use Check my response once, then compare your ideas with the model response.';
+        saved.guidance = '<strong>Start with a short attempt.</strong> Write about 15 words, or use Check my response once, then compare your ideas with the appropriate response example.';
       } else {
         saved.modelVisible = !saved.modelVisible;
         if (saved.modelVisible) saved.checked = true;

@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks13-14-guided-v1",
   "resetLabel": "Weeks 13–14"
 };
+window.THEORY_REFERENCES = {
+  mc: ["surface-prep", "abrasives", "abrasives", "abrasives", "finish-selection", "application", "application", "application", "defects", "industry", "industry", "industry"],
+  written: ["surface-prep", "finish-selection", "defects", "industry"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Why should dried glue be removed before normal finish sanding?",

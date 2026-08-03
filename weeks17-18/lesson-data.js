@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks17-18-guided-v1",
   "resetLabel": "Weeks 17–18"
 };
+window.THEORY_REFERENCES = {
+  mc: ["portfolio", "captions", "evaluation", "portfolio", "evaluation", "revision", "revision", "command-words", "command-words", "revision", "integrated", "command-words"],
+  written: ["portfolio", "captions", "evaluation", "integrated"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Which portfolio item provides the strongest manufacturing evidence?",

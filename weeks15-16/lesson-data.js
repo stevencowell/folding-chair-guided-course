@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks15-16-guided-v1",
   "resetLabel": "Weeks 15–16"
 };
+window.THEORY_REFERENCES = {
+  mc: ["labels", "labels", "sds", "sds", "controls", "controls", "sds", "controls", "polishing", "sustainability", "lifecycle", "sustainability"],
+  written: ["sds", "controls", "sustainability", "lifecycle"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "What should be checked before opening a finishing product?",

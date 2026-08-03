@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks9-10-guided-v1",
   "resetLabel": "Weeks 9–10"
 };
+window.THEORY_REFERENCES = {
+  mc: ["criteria", "safe-features", "safe-features", "decision-making", "orthogonal", "orthogonal", "dimensioning", "dimensioning", "dimensioning", "cad", "cad", "cad"],
+  written: ["criteria", "orthogonal", "dimensioning", "cad"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Which statement is the strongest design justification?",

@@ -257,7 +257,7 @@ input[type="text"]:focus, textarea:focus { outline: 3px solid rgba(11,95,173,.18
 .theory-table th { background: #edf3f9; color: var(--brand-dark); }
 .theory-table tbody tr:nth-child(even) { background: #fbfcfe; }
 
-.textbook-section { display: flow-root; }
+.textbook-section { display: flow-root; scroll-margin-top: 86px; }
 .lesson-visual {
   float: right;
   width: min(42%, 430px);
@@ -314,22 +314,27 @@ input[type="text"]:focus, textarea:focus { outline: 3px solid rgba(11,95,173,.18
 .option-label.option-correct { border-color: #81c4b5; background: var(--accent-light); }
 .option-label input { margin-top: 3px; }
 .question-actions, .written-actions, .button-row { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin-top: 14px; }
-.primary-button, .secondary-button, .hint-button, .check-button, .model-button, .score-button {
+.primary-button, .secondary-button, .hint-button, .check-button, .model-button, .score-button, .secondary-hint-button {
   border-radius: 9px;
   padding: 10px 14px;
   font-weight: 800;
   border: 1px solid transparent;
+  max-width: 100%;
+  white-space: normal;
 }
 .primary-button, .check-button { background: var(--brand); color: #fff; }
 .primary-button:hover, .check-button:hover { background: var(--brand-dark); }
-.secondary-button, .hint-button, .model-button { background: #fff; color: var(--brand-dark); border-color: #aebfd0; }
-.secondary-button:hover, .hint-button:hover, .model-button:hover { background: var(--brand-light); }
-.feedback, .hint-panel, .model-panel, .response-guidance { display: none; margin-top: 13px; border-radius: 10px; padding: 13px 15px; }
-.feedback.show, .hint-panel.show, .model-panel.show, .response-guidance.show { display: block; }
+.secondary-button, .hint-button, .model-button, .secondary-hint-button { background: #fff; color: var(--brand-dark); border-color: #aebfd0; }
+.secondary-button:hover, .hint-button:hover, .model-button:hover, .secondary-hint-button:hover { background: var(--brand-light); }
+.feedback, .theory-hint-panel, .hint-panel, .model-panel, .response-guidance { display: none; margin-top: 13px; border-radius: 10px; padding: 13px 15px; }
+.feedback.show, .theory-hint-panel.show, .hint-panel.show, .model-panel.show, .response-guidance.show { display: block; }
 .feedback.correct { background: var(--accent-light); border-left: 5px solid var(--accent); }
 .feedback.not-yet { background: var(--amber-light); border-left: 5px solid var(--amber); }
 .feedback.error { background: var(--danger-light); border-left: 5px solid var(--danger); }
 .hint-panel { background: var(--brand-light); border-left: 5px solid var(--brand); }
+.theory-hint-panel { background: #fff8df; border-left: 5px solid var(--amber); }
+.theory-hint-panel p { margin: 7px 0 11px; }
+.theory-revisit-link, .written-theory-link a { color: var(--brand-dark); font-weight: 900; }
 .model-panel { background: #f1f4f8; border: 1px solid #cfd9e4; }
 .attempts { color: var(--muted); font-size: .84rem; margin-left: auto; }
 .mastery-badge { display: none; color: var(--accent); font-weight: 900; }
@@ -341,6 +346,8 @@ input[type="text"]:focus, textarea:focus { outline: 3px solid rgba(11,95,173,.18
 .scaffold { border-left: 4px solid var(--brand); background: var(--brand-light); border-radius: 0 10px 10px 0; padding: 13px 16px; margin: 14px 0; }
 .scaffold strong { display: block; margin-bottom: 5px; }
 .scaffold ul { margin: 4px 0 0; padding-left: 1.15rem; }
+.written-theory-link { margin: 11px 0 0; padding-top: 10px; border-top: 1px solid rgba(11,95,173,.2); }
+.written-theory-link strong { display: inline; }
 textarea { width: 100%; min-height: 175px; resize: vertical; border: 1px solid #aebccc; border-radius: 10px; padding: 13px; color: var(--ink); background: #fff; }
 .response-meta { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: .84rem; margin-top: 7px; }
 .concept-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; }
@@ -668,7 +675,7 @@ footer p { margin: 3px; }
 
 @media print {
   /* Keep the saved evidence clean: models and hints are teaching supports, not student work. */
-  .hint-panel, .model-panel, .response-guidance { display: none !important; }
+  .theory-hint-panel, .hint-panel, .model-panel, .response-guidance { display: none !important; }
   .feedback:not(.correct) { display: none !important; }
   .self-score { display: block !important; }
 }

@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks19-20-guided-v1",
   "resetLabel": "Weeks 19–20"
 };
+window.THEORY_REFERENCES = {
+  mc: ["inspection", "inspection", "diagnosis", "diagnosis", "diagnosis", "maintenance", "submission", "submission", "reflection", "care", "maintenance", "submission"],
+  written: ["inspection", "diagnosis", "submission", "reflection"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Which final-work priority is strongest?",
@@ -294,7 +298,7 @@ window.WRITTEN_QUESTIONS = [
       "Include current drawings, approved changes, actual costs, captions and evaluation.",
       "State clear decision criteria and workshop handover actions."
     ],
-    "model": "The structural inspection would check that fixed joints are closed, frame members are sound, paired parts remain symmetrical and there are no damaging splits or sharp defects. The pivot inspection would confirm seated countersunk bolt heads, specified washers between moving members and under the locknuts, secure hardware and acceptable side play. The chair would complete the full open-to-folded cycle slowly without binding, collision or unexpected resistance. On a level surface, the intended contact points would sit correctly and the open chair would remain stable under the approved test. The finish would be clean, sufficiently cured, free from hazardous roughness and clear of the moving faces. The portfolio would match the as-built chair through current drawings, approved revisions, photographs, actual costs and evaluation. Any structural uncertainty, unstable contact, misaligned pivot or damaged hardware would require teacher review rather than a pass. Handover would include returned tools, separated waste, secured chemicals, clear access and reported faults."
+    "model": "I would check that the fixed joints are closed, the frame members are sound and the paired parts remain symmetrical. At each pivot I would check the countersunk bolt head, specified washers, locknut and side play. I would move the chair slowly from open to folded and look for binding, collision or unusual resistance. On a level surface, the open chair must sit correctly and pass the approved stability check. The finish should be cured, smooth and clear of moving faces. My portfolio would match the finished chair through current drawings, approved changes, photographs, costs and evaluation. Any structural doubt, unstable contact, misaligned pivot or damaged hardware would require teacher review."
   },
   {
     "title": "2. Diagnose two final faults",

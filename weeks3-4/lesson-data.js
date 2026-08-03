@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks3-4-guided-v1",
   "resetLabel": "Weeks 3–4"
 };
+window.THEORY_REFERENCES = {
+  mc: ["cutting-list", "cutting-list", "timber-selection", "timber-selection", "fewtel", "fewtel", "fewtel", "fewtel", "joinery", "mortiser", "mortiser", "joinery"],
+  written: ["cutting-list", "fewtel", "mortiser", "joinery"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "What is the main purpose of a cutting list?",

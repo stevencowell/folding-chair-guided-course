@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks1-2-guided-v1",
   "resetLabel": "Weeks 1–2"
 };
+window.THEORY_REFERENCES = {
+  mc: ["plans", "plans", "mechanism", "mechanism", "mechanism", "mechanism", "mechanism", "design", "datums", "datums", "datums", "paired-parts"],
+  written: ["plans", "mechanism", "design", "paired-parts"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "The plan is displayed smaller on your screen than it was when it was drawn. Which information should control the chair dimensions?",

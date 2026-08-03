@@ -2,6 +2,10 @@ window.LESSON_CONFIG = {
   "storageKey": "folding-chair-weeks11-12-guided-v1",
   "resetLabel": "Weeks 11–12"
 };
+window.THEORY_REFERENCES = {
+  mc: ["assembly-sequence", "adhesives", "adhesives", "clamping", "clamping", "clamping", "costing", "costing", "planning", "checkpoints", "planning", "planning"],
+  written: ["assembly-sequence", "clamping", "costing", "planning"]
+};
 window.MC_QUESTIONS = [
   {
     "question": "Why should a complete dry fit occur before adhesive is opened?",
