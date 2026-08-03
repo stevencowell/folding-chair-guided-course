@@ -680,3 +680,47 @@ footer p { margin: 3px; }
 .outcomes-details[open] summary { border-bottom: 1px solid var(--line); }
 .outcome-list { margin: 0; padding: 17px 24px 20px 42px; }
 .outcome-list li { margin-bottom: 10px; line-height: 1.55; }
+
+/* Guided-course reading rhythm and long-response layout */
+.textbook-section .kicker,
+.textbook-section .section-kicker {
+  max-width: 78ch;
+  margin-bottom: 10px;
+  color: #33465d;
+  font-weight: 750;
+  line-height: 1.5;
+}
+.textbook-section h2 { margin-bottom: 22px; }
+.textbook-section > p,
+.textbook-section > div > p { max-width: 78ch; text-wrap: pretty; }
+.textbook-section .theory-chunk-heading {
+  margin: 24px 0 8px;
+  padding-left: 11px;
+  border-left: 4px solid var(--brand);
+  color: var(--brand-dark);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.textbook-section strong { color: var(--brand-dark); }
+.textbook-section li + li { margin-top: 6px; }
+.written-list { width: 100%; min-width: 0; }
+.written-card { width: 100%; min-width: 0; }
+.written-card textarea {
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  min-height: 175px;
+  padding: 14px;
+  line-height: 1.55;
+  resize: vertical;
+  overflow-wrap: break-word;
+}
+.response-meta { flex-wrap: wrap; }
+
+@media (max-width: 700px) {
+  .lesson-hero + main .lesson-overview .roadmap { grid-template-columns: 1fr; }
+  .written-card { padding: 18px 14px; }
+  .written-card textarea { min-height: 210px; padding: 12px; }
+  .response-meta { display: grid; grid-template-columns: 1fr; }
+}

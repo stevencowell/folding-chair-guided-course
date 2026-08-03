@@ -524,7 +524,38 @@
     if (classInput) classInput.value = state.studentClass;
   }
 
+  function enhanceTheoryReadability() {
+    const chunkHeadings = ['Understand the idea', 'Apply it to this project', 'Check before moving on'];
+    const excludedContainers = 'aside, article, li, figure, .callout, .tool-card, .criteria-grid, .mechanism-grid, .process-steps';
+
+    document.querySelectorAll('.textbook-section').forEach((section) => {
+      if (section.querySelector('.theory-chunk-heading')) return;
+      const paragraphs = Array.from(section.querySelectorAll('p:not(.kicker):not(.section-kicker):not(.eyebrow)'))
+        .filter((paragraph) => !paragraph.closest(excludedContainers))
+        .filter((paragraph) => paragraph.textContent.trim().length >= 90);
+      const totalCharacters = paragraphs.reduce((total, paragraph) => total + paragraph.textContent.trim().length, 0);
+      if (paragraphs.length < 2 || totalCharacters < 360) return;
+
+      const markers = paragraphs.length >= 3
+        ? [0, Math.floor(paragraphs.length / 2), paragraphs.length - 1]
+        : [0, paragraphs.length - 1];
+      [...new Set(markers)].forEach((paragraphIndex, headingIndex) => {
+        const paragraph = paragraphs[paragraphIndex];
+        if (!paragraph || paragraph.previousElementSibling?.classList.contains('theory-chunk-heading')) return;
+        const heading = document.createElement('h3');
+        heading.className = 'theory-chunk-heading';
+        heading.textContent = chunkHeadings[headingIndex];
+        const visual = headingIndex === 0 ? section.querySelector(':scope > figure') : null;
+        if (visual && (visual.compareDocumentPosition(paragraph) & Node.DOCUMENT_POSITION_FOLLOWING)) {
+          visual.before(heading);
+          return;
+        }
+        paragraph.before(heading);
+      });
+    });
+  }
   function initialise() {
+    enhanceTheoryReadability();
     bindStudentFields();
     renderMcQuestions();
     renderWrittenQuestions();
