@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Describe a safe and accurate pivot-hole drilling process",
     "prompt": "Explain how you would locate, drill and inspect a 6.5 mm pivot hole in a paired chair component. Include datums, component orientation, clamping, drill alignment, breakout control and the final comparison.",
+    "clarification": "What is the safe glue-up order? How will you check alignment, pressure and clean-up?",
     "minWords": 115,
     "concepts": [
       {
@@ -300,6 +301,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Explain the pivot hardware stack",
     "prompt": "Explain the function of the M6 × 50 countersunk bolt, the washers between components and under the nut, and the locknut. Describe what happens if the nut is too tight or too loose.",
+    "clarification": "How will you position, fit and check the approved hardware?",
     "minWords": 95,
     "concepts": [
       {
@@ -370,6 +372,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Diagnose a dry-assembly fault",
     "prompt": "The chair folds smoothly for the first half of its movement, then one side rubs and the frame twists. Describe a logical diagnostic sequence and the least invasive corrections you would consider.",
+    "clarification": "What is causing the problem? What is the safest, smallest correction to try?",
     "minWords": 110,
     "concepts": [
       {
@@ -440,6 +443,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Build a WMS for the pivot task",
     "prompt": "Outline a Work Method Statement for marking, drilling, countersinking, assembling and testing the chair pivots. Include the relationship between the drawing, drill-press SOP, hazards, controls, hold points and quality evidence.",
+    "clarification": "What will you test? What result or evidence will show whether it works?",
     "minWords": 125,
     "concepts": [
       {

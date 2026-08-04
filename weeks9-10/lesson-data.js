@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Evaluate two design features",
     "prompt": "Feature A is a deep carry cut-out close to a pivot. Feature B is a smaller rounded carry detail positioned away from the pivot but it is less visually dramatic. Select the stronger option and justify it using function, strength, appearance, manufacturability and folding clearance.",
+    "clarification": "How well did it meet the criterion? What evidence, limitation and improvement can you give?",
     "minWords": 120,
     "concepts": [
       {
@@ -299,6 +300,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Explain an orthogonal view set for the folding chair",
     "prompt": "Explain what the front, top and side views each communicate, how the views align in third-angle projection and why the side view is especially important for this moving product.",
+    "clarification": "What is the key idea about an orthogonal view set for the folding chair? Which reasons or steps matter?",
     "minWords": 105,
     "concepts": [
       {
@@ -368,6 +370,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Critique a faulty technical drawing",
     "prompt": "A student CAD drawing has no units, dimensions the pivot from a curved end, repeats one overall dimension twice with different values, and does not show which face is countersunk. Explain the problems and specify how the drawing should be corrected.",
+    "clarification": "What is causing the problem? What is the safest, smallest correction to try?",
     "minWords": 120,
     "concepts": [
       {
@@ -436,6 +439,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Describe a reliable CAD workflow",
     "prompt": "Describe a CAD workflow for adding an approved design feature to the chair. Include units, layers, datums, geometric constraints, dimensions, revision control and checking before manufacture.",
+    "clarification": "What are the main details or steps for a reliable CAD workflow?",
     "minWords": 125,
     "concepts": [
       {

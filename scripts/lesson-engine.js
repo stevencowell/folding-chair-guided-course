@@ -268,12 +268,19 @@
       const selfScore = Number.isInteger(saved.selfScore) ? saved.selfScore : null;
       const wc = wordCount(response);
       const met = conceptMatches(response, item.concepts);
+      const clarification = item.clarification
+        ? `<div class="question-clarification screen-only">
+            <button class="clarification-button" type="button" data-action="toggle-clarification" aria-expanded="false" aria-controls="written-clarification-${index}">What is this asking?</button>
+            <div class="clarification-panel" id="written-clarification-${index}" hidden><strong>In simpler words:</strong> ${escapeHtml(item.clarification)}</div>
+          </div>`
+        : '';
       const theory = getTheoryReference('written', index);
 
       return `
         <article class="written-card ${checked ? 'reviewed' : ''}" data-written-index="${index}">
           <h3>${escapeHtml(item.title)}</h3>
-          <p>${escapeHtml(item.prompt)}</p>
+          <p class="written-prompt">${escapeHtml(item.prompt)}</p>
+          ${clarification}
           <div class="scaffold">
             <strong>Sentence starters</strong>
             <ul>${item.scaffold.map(line => `<li>${escapeHtml(line)}</li>`).join('')}</ul>
@@ -287,7 +294,7 @@
           </div>
           <div class="written-actions screen-only">
             <button class="check-button" type="button" data-action="check-written">Check my response</button>
-            <button class="model-button" type="button" data-action="model-written" aria-expanded="${modelVisible}" aria-controls="model-written-${index}">${modelVisible ? 'Hide appropriate response example' : 'Compare with appropriate response example'}</button>
+            <button class="model-button" type="button" data-action="model-written" aria-expanded="${modelVisible}" aria-controls="model-written-${index}">${modelVisible ? 'Hide appropriate response example' : 'Appropriate response example'}</button>
           </div>
           <div class="response-guidance ${saved.guidance ? 'show' : ''} ${saved.ready ? 'ready' : ''}" role="status" aria-live="polite">${saved.guidance || ''}</div>
           <div id="model-written-${index}" class="model-panel ${modelVisible ? 'show' : ''}"><strong>Appropriate response example:</strong> ${escapeHtml(item.model)}</div>
@@ -442,6 +449,17 @@
     const item = writtenQuestions[index];
     const saved = state.written[index] || {};
     const action = event.target.dataset.action;
+
+    if (action === 'toggle-clarification') {
+      const button = event.target;
+      const panel = card.querySelector(`#${button.getAttribute('aria-controls')}`);
+      if (!panel) return;
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!isExpanded));
+      button.textContent = isExpanded ? 'What is this asking?' : 'Hide simpler wording';
+      panel.hidden = isExpanded;
+      return;
+    }
 
     if (action === 'revisit-theory') {
       const target = document.getElementById(event.target.dataset.theoryTarget);

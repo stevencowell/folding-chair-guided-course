@@ -343,6 +343,21 @@ input[type="text"]:focus, textarea:focus { outline: 3px solid rgba(11,95,173,.18
 .written-card { border: 1px solid var(--line); border-radius: 14px; padding: 22px; background: #fcfdff; }
 .written-card.reviewed { border-color: #9ccdc1; background: #fbfffe; }
 .written-card h3 { margin: 0 0 8px; color: var(--brand-dark); }
+.written-prompt { margin-bottom: 8px; }
+.question-clarification { margin: 0 0 15px; }
+.clarification-button {
+  min-height: 42px;
+  border: 1px solid #aebfd0;
+  border-radius: 9px;
+  padding: 8px 12px;
+  background: #fff;
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+.clarification-button:hover { background: var(--brand-light); }
+.clarification-button:focus-visible { outline: 3px solid rgba(11,95,173,.28); outline-offset: 2px; }
+.clarification-panel { margin-top: 9px; border-left: 5px solid var(--accent); border-radius: 10px; padding: 12px 14px; background: #eef9f6; color: var(--ink); }
+.clarification-panel[hidden] { display: none; }
 .scaffold { border-left: 4px solid var(--brand); background: var(--brand-light); border-radius: 0 10px 10px 0; padding: 13px 16px; margin: 14px 0; }
 .scaffold strong { display: block; margin-bottom: 5px; }
 .scaffold ul { margin: 4px 0 0; padding-left: 1.15rem; }

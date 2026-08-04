@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Turn a drawing into a practical cutting list",
     "prompt": "Explain what information should be recorded in a cutting list for the folding chair and why rough sizes may differ from finished sizes. Include how matching or mirrored components should be identified.",
+    "clarification": "What must the cutting list record? How will you check it against the drawing?",
     "minWords": 80,
     "concepts": [
       {
@@ -287,6 +288,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Explain the FEWTEL timber-preparation sequence",
     "prompt": "Describe the FEWTEL process and explain why the order matters. Include at least three quality-control checks that should occur before the timber is accepted for chair components.",
+    "clarification": "What order will you prepare the timber in? What checks show it is ready?",
     "minWords": 100,
     "concepts": [
       {
@@ -357,6 +359,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Safe and accurate use of a hollow-chisel mortiser",
     "prompt": "Explain a safe setup and operating routine for cutting a practice mortise. Include work holding, machine checks, plunging technique and what to do if the chisel binds.",
+    "clarification": "How will you set up and work safely? When would you stop and ask for help?",
     "minWords": 95,
     "concepts": [
       {
@@ -419,6 +422,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Select the right joint for the required behaviour",
     "prompt": "Compare a mortise-and-tenon joint, a 6 mm trench used to support a chair cross member, and a bolted pivot joint. Explain what each joint is designed to do and why one cannot simply replace another.",
+    "clarification": "How do the joint options differ? Which one suits the approved design, and why?",
     "minWords": 100,
     "concepts": [
       {

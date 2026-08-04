@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Write a final quality-assurance report",
     "prompt": "Outline a final inspection report for the folding chair. Cover fixed joints, pivot hardware, movement, stability, finish, documentation and workshop handover. State the evidence that would justify a pass or teacher review.",
+    "clarification": "How will you position, fit and check the approved hardware?",
     "minWords": 145,
     "concepts": [
       {
@@ -303,6 +304,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Diagnose two final faults",
     "prompt": "The chair binds near the folded position and also rocks slightly when open on a level floor. Explain a step-by-step diagnostic plan and the least invasive corrections you would consider before any timber is removed.",
+    "clarification": "What is causing the problem? What is the safest, smallest correction to try?",
     "minWords": 135,
     "concepts": [
       {
@@ -374,6 +376,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Prepare an authentic final submission",
     "prompt": "Describe how you would prepare the chair and portfolio for submission. Include product presentation, as-built information, source acknowledgement, photographs, calculations, evaluation and what you would do with a remaining fault.",
+    "clarification": "How well did it meet the criterion? What evidence, limitation and improvement can you give?",
     "minWords": 130,
     "concepts": [
       {
@@ -445,6 +448,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Write a final reflective practice response",
     "prompt": "Identify one successful habit to keep, one problem and its cause, one specific change for the next project, and one transferable skill from the folding-chair unit. Explain how the future improvement would be verified.",
+    "clarification": "What worked, what caused a problem, and what will you change and check next time?",
     "minWords": 145,
     "concepts": [
       {

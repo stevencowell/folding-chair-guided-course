@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Plan a safe curved bandsaw cut",
     "prompt": "Describe how you would prepare, cut and refine one R32 or R16 chair component. Include marking, waste, guard position, hand placement, relief cuts and the final quality check.",
+    "clarification": "How will you mark, cut and check the curve safely?",
     "minWords": 105,
     "concepts": [
       {
@@ -300,6 +301,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Respond to a change in bandsaw conditions",
     "prompt": "During a curved cut the timber begins to lift, the blade labours and the cut starts drifting towards the finished line. Explain what the student should do immediately and what should be checked before the work resumes.",
+    "clarification": "How will you mark, cut and check the curve safely?",
     "minWords": 90,
     "concepts": [
       {
@@ -358,6 +360,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Diagnose and refine a tight tenon",
     "prompt": "A practice tenon enters the mortise about halfway, is tighter on one side and leaves a small shoulder gap. Explain how you would diagnose the problem and refine the joint without making it loose.",
+    "clarification": "What is causing the poor fit? How would you correct it without making the joint loose?",
     "minWords": 100,
     "concepts": [
       {
@@ -426,6 +429,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Explain how quality gates protect the folding mechanism",
     "prompt": "Explain how at least three quality gates between marking, bandsaw shaping, refinement and drilling can prevent cumulative error in the folding-chair frame.",
+    "clarification": "What must be checked before moving on? How does that stop errors building up?",
     "minWords": 110,
     "concepts": [
       {

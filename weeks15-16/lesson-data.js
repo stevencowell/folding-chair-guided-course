@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Use an SDS to prepare for a finishing task",
     "prompt": "A student needs to know the product hazards, required ventilation and gloves, first aid for eye contact, spill response and storage conditions. Identify the relevant SDS sections and explain how the information would be used before work begins.",
+    "clarification": "Which SDS sections do you need? How will that information change your setup?",
     "minWords": 125,
     "concepts": [
       {
@@ -296,6 +297,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Select controls for a solvent-based coating task",
     "prompt": "Using the hierarchy of controls, propose a set of controls for applying a solvent-based finish in a school workshop. Include substitution, isolation or engineering, administrative controls and PPE, and explain why PPE alone is insufficient.",
+    "clarification": "What could cause harm? What could happen? Which controls would make the task safer?",
     "minWords": 125,
     "concepts": [
       {
@@ -368,6 +370,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Compare two finish options using sustainability criteria",
     "prompt": "Finish A has lower emissions and simple clean-up but may need more frequent maintenance. Finish B is more durable but uses a higher-hazard solvent and requires stronger controls. Compare the trade-offs and recommend the better option for an indoor school folding chair.",
+    "clarification": "What finish choices or steps must you compare? Which controls and checks matter?",
     "minWords": 125,
     "concepts": [
       {
@@ -437,6 +440,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Propose a life-cycle improvement plan",
     "prompt": "Propose four practical changes that would reduce the folding chair’s environmental impact across sourcing, manufacture, use, repair and end of life. Explain the trade-off or evidence for each change.",
+    "clarification": "How could you reduce the project’s impact? What trade-off or evidence supports each change?",
     "minWords": 135,
     "concepts": [
       {

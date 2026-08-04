@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Why does the drawing say “DO NOT SCALE DRAWING”?",
     "prompt": "Explain why measuring the printed or on-screen picture could create inaccurate chair components. State what information should be used instead.",
+    "clarification": "Why can’t you measure the picture? What information should you use instead?",
     "minWords": 45,
     "concepts": [
       {
@@ -276,6 +277,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Hazard, risk and controls for drilling a pivot hole",
     "prompt": "Identify one hazard when drilling a 6.5 mm pivot hole, describe the possible risk, and explain at least two suitable controls.",
+    "clarification": "What could cause harm? What could happen? Which controls would make the task safer?",
     "minWords": 70,
     "concepts": [
       {
@@ -337,6 +339,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Select and justify a design variation",
     "prompt": "Option A uses a thin curved backrest that looks elegant but may flex and requires extra machining. Option B uses a slightly heavier straight backrest that is stronger and simpler to manufacture but less decorative. Select the more suitable option for this school project and justify your decision using at least four design criteria.",
+    "clarification": "What would you choose? Which evidence or requirements support that choice?",
     "minWords": 85,
     "concepts": [
       {
@@ -413,6 +416,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Explain a reliable mark-out routine for a mirrored pair",
     "prompt": "Explain how you would mark out a left- and right-hand pair of frame components so their lengths, hole centres, waste sides and countersink orientation remain accurate.",
+    "clarification": "What will you mark, where will you measure from, and how will you check it before cutting?",
     "minWords": 95,
     "concepts": [
       {

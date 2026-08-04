@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Select a concise portfolio evidence set",
     "prompt": "Choose six items that would form a strong evidence chain for the folding-chair portfolio. For each item, explain what it proves and why it is stronger than adding several unlabelled photographs.",
+    "clarification": "Which evidence will you include? What does each item prove?",
     "minWords": 135,
     "concepts": [
       {
@@ -297,6 +298,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Write a strong production caption",
     "prompt": "Write a portfolio caption for a photograph showing the dry-assembled chair and a close-up of the right pivot. The chair folds, but the right side initially had excessive play and was corrected by checking washer placement and locknut adjustment.",
+    "clarification": "What does the photo show? What decision, problem or check should the caption explain?",
     "minWords": 90,
     "concepts": [
       {
@@ -363,6 +365,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Evaluate one criterion with evidence",
     "prompt": "Evaluate the finished chair against the criterion “The chair must fold smoothly, remain stable when open and be convenient to store.” Include evidence, a limitation, its likely cause and a specific improvement.",
+    "clarification": "How well did it meet the criterion? What evidence, limitation and improvement can you give?",
     "minWords": 125,
     "concepts": [
       {
@@ -435,6 +438,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Answer an integrated assessment question",
     "prompt": "Explain how accurate measuring, FEWTEL timber preparation, paired component checks and dry assembly work together to produce a folding chair with aligned pivots and reliable movement.",
+    "clarification": "What order will you prepare the timber in? What checks show it is ready?",
     "minWords": 140,
     "concepts": [
       {

@@ -228,6 +228,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "1. Plan the chair’s surface-preparation sequence",
     "prompt": "Describe how you would inspect and prepare the folding chair before its first finish coat. Include glue removal, shape checks, grit selection, sanding direction, edge protection, dust removal and a final functional check.",
+    "clarification": "What is the safe glue-up order? How will you check alignment, pressure and clean-up?",
     "minWords": 125,
     "concepts": [
       {
@@ -300,6 +301,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "2. Select and justify a finish system",
     "prompt": "Choose either a penetrating oil or a clear film finish for an indoor folding chair. Justify your choice using appearance, protection, movement clearances, application safety, drying/curing, maintenance and repair.",
+    "clarification": "What would you choose? Which evidence or requirements support that choice?",
     "minWords": 120,
     "concepts": [
       {
@@ -370,6 +372,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "3. Diagnose a poor finish result",
     "prompt": "A first coat has several dust nibs, one sag on a vertical rail and a pale patch near a joint. Explain the likely causes, what should not be done immediately and a controlled correction plan.",
+    "clarification": "What is causing the problem? What is the safest, smallest correction to try?",
     "minWords": 120,
     "concepts": [
       {
@@ -440,6 +443,7 @@ window.WRITTEN_QUESTIONS = [
   {
     "title": "4. Compare school and industry quality practice",
     "prompt": "Explain how at least four industry practices—such as standard work instructions, jigs, traceability, staged inspection, maintenance and fault reporting—relate to the folding-chair project.",
+    "clarification": "What is causing the problem? What is the safest, smallest correction to try?",
     "minWords": 130,
     "concepts": [
       {
