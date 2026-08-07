@@ -207,6 +207,36 @@
     document.querySelectorAll('textarea[data-action="written-input"]').forEach(autoGrowTextarea);
   }
 
+  function interleaveMcQuestions() {
+    const source = document.getElementById('mc-questions');
+    const theories = [...document.querySelectorAll('main .textbook-section')];
+    if (!source || !theories.length) return;
+    const existingGroups = [...document.querySelectorAll('.interleaved-check-group')];
+    const freshCards = [...source.querySelectorAll(':scope > .question-card')];
+    const cards = freshCards.length ? freshCards : existingGroups.flatMap(group => [...group.querySelectorAll('.question-card')]);
+    existingGroups.forEach(group => group.remove());
+    if (!cards.length) return;
+    const overview = document.getElementById('knowledge-checks');
+    if (overview && overview.nextElementSibling !== theories[0]) theories[0].before(overview);
+    const byTheory = theories.map(() => []);
+    cards.forEach((card, index) => {
+      const targetId = card.querySelector('[data-theory-target]')?.dataset.theoryTarget || card.querySelector('a[href^="#"]')?.getAttribute('href')?.slice(1);
+      const explicitIndex = theories.findIndex(theory => theory.id === targetId);
+      const theoryIndex = explicitIndex >= 0 ? explicitIndex : Math.min(theories.length - 1, Math.floor(index * theories.length / cards.length));
+      byTheory[theoryIndex].push(card);
+    });
+    byTheory.forEach((groupCards, index) => {
+      if (!groupCards.length) return;
+      const group = document.createElement('section');
+      const headingId = `interleaved-check-title-${index + 1}`;
+      group.className = 'card activity-section interleaved-check-group';
+      group.setAttribute('aria-labelledby', headingId);
+      group.innerHTML = `<div class="activity-heading"><div><p class="section-kicker">Guided practice</p><h2 id="${headingId}">${escapeHtml(theories[index].querySelector('h2')?.textContent || `Theory ${index + 1}`)} knowledge checks</h2></div></div><div class="question-list"></div>`;
+      group.querySelector('.question-list').append(...groupCards);
+      theories[index].insertAdjacentElement('afterend', group);
+    });
+  }
+
   function renderMcQuestions() {
     const container = document.getElementById('mc-questions');
     if (!container) return;
@@ -255,6 +285,7 @@
           <div class="feedback ${feedbackClass} ${feedback ? 'show' : ''}" role="status" aria-live="polite">${feedback}</div>
         </article>`;
     }).join('');
+    interleaveMcQuestions();
   }
 
   function renderWrittenQuestions() {
@@ -567,7 +598,7 @@
   }
 
   function bindGlobalActions() {
-    const mc = document.getElementById('mc-questions');
+    const mc = document.querySelector('main');
     const written = document.getElementById('written-questions');
     if (mc) {
       mc.addEventListener('click', handleMcClick);
