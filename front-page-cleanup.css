@@ -2,6 +2,7 @@
 .phase-grid,
 .front-page-extra,
 .resource-row { display: none !important; }
+.course-family-hero .hero-showcase .hero-chair { background:#174e51; object-fit:contain !important; object-position:center !important; }
 .module-pathway[hidden] { display: block !important; }
 .module-pathway .time-badge,
 .module-pathway .status,
