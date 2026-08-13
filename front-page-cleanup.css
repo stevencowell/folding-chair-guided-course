@@ -10,6 +10,6 @@
 .module-pathway .week-card { align-items:center; background:#fff; border:1px solid #d3dde3; border-radius:16px; box-shadow:none; display:grid; min-height:148px; padding:1rem 3.3rem 1rem 1.25rem; position:relative; }
 .module-pathway .week-card h3 { color:#123e4c; font-size:1.05rem; line-height:1.25; margin:0 0 .35rem; }
 .module-pathway .week-card p { color:#425b66; font-size:.88rem; line-height:1.35; margin:0; }
-.module-pathway .week-card .button-link { align-items:center; color:#006f62; display:flex; font-size:0; inset:0; justify-content:flex-end; padding-right:1.25rem; position:absolute; }
+.module-pathway .week-card .button-link { align-items:center; background:transparent !important; border:0 !important; border-radius:inherit !important; box-shadow:none !important; color:#006f62; display:flex; font-size:0; inset:0; justify-content:flex-end; padding-right:1.25rem; position:absolute; }
 .module-pathway .week-card .button-link::after { content:'→'; font-size:1.3rem; }
 @media (max-width:700px) { .module-pathway .week-grid { grid-template-columns:1fr; } }
