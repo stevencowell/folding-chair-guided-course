@@ -1,0 +1,68 @@
+/* Shared Timber module presentation pattern: Mirror reference. */
+body.mirror-module-flow .module-presentation-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px 32px;
+  min-height: 260px;
+}
+
+body.mirror-module-flow .mirror-module-actions,
+body.mirror-module-flow .mirror-support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+body.mirror-module-flow .student-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin: 0 0 24px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body.mirror-module-flow .student-strip h2 { margin: .2rem 0 .35rem; }
+body.mirror-module-flow .student-strip p { margin: .2rem 0; }
+body.mirror-module-flow .student-strip .student-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(150px, .7fr);
+  gap: 12px;
+  margin: 0;
+}
+body.mirror-module-flow .student-strip .student-fields label { display: grid; gap: 5px; }
+body.mirror-module-flow .student-strip .student-fields input {
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+}
+
+body.mirror-module-flow .part-banner.mirror-theory-divider {
+  margin: 34px 0 20px;
+  padding: 0 0 0 18px;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-left: 4px solid var(--accent, #315d3a);
+  border-radius: 0;
+  box-shadow: none;
+}
+body.mirror-module-flow .part-banner.mirror-theory-divider h2 { margin: 0 0 6px; }
+body.mirror-module-flow .part-banner.mirror-theory-divider p { margin: 0; }
+
+@media (max-width: 900px) {
+  body.mirror-module-flow .student-strip .student-fields { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 680px) {
+  body.mirror-module-flow .module-presentation-card { grid-template-columns: 1fr; }
+  body.mirror-module-flow .mirror-module-actions,
+  body.mirror-module-flow .mirror-support-actions { justify-content: flex-start; }
+  body.mirror-module-flow .student-strip .student-fields { grid-template-columns: 1fr; }
+}
+
