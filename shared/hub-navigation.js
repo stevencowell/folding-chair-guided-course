@@ -29,7 +29,7 @@
     ["Course", "index.html", isHome],
     ["Modules", "index.html#course-path-title", /\/weeks\d+-\d+\//.test(path)],
     ["Video learning", "youtube-library/video-library.html", path.includes("/youtube-library/")],
-    ["Busy Work", "https://stevencowell.github.io/busy-worksheets/?library=timber", false, true],
+    ["Puzzles", "https://stevencowell.github.io/busy-worksheets/?library=timber", false, true],
     ["My folio", "folding-chair-folio.html", path.endsWith("/folding-chair-folio.html")],
     ["Project plans", "Folding-Chair-Project-Plans.pdf", false],
     ["Teacher resources", "teacher-resources.html", path.endsWith("/teacher-resources.html")],
