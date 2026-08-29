@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.1",
   "program_id": "folding-chair",
   "version": "v2.1",
   "teacher_facing_display": {
@@ -158,7 +158,7 @@
     {
       "id": "F1",
       "title": "Stage 5 Timber 200-hour family coverage record v2.0",
-      "authority": "local-alignment-record",
+      "authority": "quality-reference",
       "location": "Stage-5-Timber-200-Hour-Family-Coverage-Record-v2.0.json",
       "revision": "verified 2026-08-29",
       "sha256": "A9B20D2D2A988A1946A2DBE38F8B69F08A13854AA5708B6F34C433E9895B3027",
@@ -167,7 +167,7 @@
     {
       "id": "A1",
       "title": "Stage 5 Timber content allocation v2.1",
-      "authority": "master-program-allocation",
+      "authority": "local-program",
       "location": "stage5-timber-content-allocation-v2.1.json",
       "revision": "v2.1 scheduled-core allocation",
       "sha256": "4AFE8DF97F021946D6EA63ACC1C23738AF683AC11FEAC9B4CFAAA14C4F3A0888",
@@ -5056,13 +5056,13 @@
       "path": "resources/teacher/Folding-Chair-50-Period-Teaching-Program-v2.1-Network-Benchmark.docx",
       "purpose": "editable-program",
       "version": "v2.1",
-      "sha256": "74527DFE104FF0970F2BF048388548FD55CAEA99B778FC3DC7A19333D5AC23E8"
+      "sha256": "218E8968FB8AEB3B61074C5E6233F2269F027AEE3F67EC2E5D2F9D66108B5B30"
     },
     {
       "path": "resources/teacher/Folding-Chair-50-Period-Teaching-Program-v2.1-Network-Benchmark.pdf",
       "purpose": "rendered-program",
       "version": "v2.1",
-      "sha256": "16F622B8B86617E6252F2777FF4BAF66E71C9AED73F4217A1F01E3011244D2FA"
+      "sha256": "070BBFE1DF89C3588B0677876242B754AFFC25E5D26D8DBDB8F8FB28A06A7F3B"
     },
     {
       "path": "resources/teacher/Folding-Chair-50-Period-Alignment-Manifest-v2.1.json",
