@@ -52,8 +52,14 @@ body.mirror-module-flow .part-banner.mirror-theory-divider {
   border-radius: 0;
   box-shadow: none;
 }
-body.mirror-module-flow .part-banner.mirror-theory-divider h2 { margin: 0 0 6px; }
-body.mirror-module-flow .part-banner.mirror-theory-divider p { margin: 0; }
+body.mirror-module-flow .part-banner.mirror-theory-divider h2 {
+  margin: 0 0 6px;
+  color: var(--ink, #182334);
+}
+body.mirror-module-flow .part-banner.mirror-theory-divider p {
+  margin: 0;
+  color: var(--muted, #5a6778);
+}
 
 @media (max-width: 900px) {
   body.mirror-module-flow .student-strip .student-fields { grid-template-columns: 1fr 1fr; }

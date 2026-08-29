@@ -1,5 +1,7 @@
 FOLDING CHAIR GUIDED COURSE — COMPLETE TWENTY-WEEK WEBSITE
 
+RECORD STATUS: Legacy 2026 package record for the previous NSW Industrial Technology syllabus. Any IND5-* codes below describe the retained 2026 assessment record only; current syllabus alignment uses the 2025 syllabus and its INT5-* outcomes.
+
 START HERE
 1. Extract the complete ZIP file.
 2. Open index.html in the top-level folder.
@@ -18,10 +20,10 @@ The landing page links to ten complete paired-week modules:
 - Weeks 17–18: Portfolio, evaluation and revision
 - Weeks 19–20: Final quality, submission and reflection
 
-ASSESSMENT AND OUTCOMES
+LEGACY 2026 ASSESSMENT AND OUTCOMES (PREVIOUS SYLLABUS)
 - Practical – 20%
 - Theory – 10% (folio and written tasks)
-- Syllabus outcomes IND5-1 to IND5-10 are retained on the landing page.
+- Legacy 2026 syllabus outcomes IND5-1 to IND5-10 were retained on the landing page for that assessment record.
 
 EACH MODULE INCLUDES
 - Detailed textbook-style theory connected to the folding-chair project
